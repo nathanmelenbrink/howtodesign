@@ -16,9 +16,13 @@
 </script> -->
 
 <script> 
-$(document).delegate("#index", "pagebeforecreate", function () {
-       $("#headerMaster").clone().appendTo(".headerChild");
-});
+// $(document).delegate("#index", "pagebeforecreate", function () {
+//        $("#headerMaster").clone().appendTo(".headerChild");
+// });
+
+//$(".headerChild").html($("#headerMaster").html());
+
+$('.headerChild').load('header.html')
 </script>
 
 <link href="css/style.css" rel="stylesheet">
