@@ -22,7 +22,24 @@
 
 //$(".headerChild").html($("#headerMaster").html());
 
-$('.headerChild').load('header.html')
+// $('.headerChild').load('header.html')
+
+jQuery.fn.headerOnAllPages = function() {
+
+			var theHeader = $('#constantheader-wrapper').html();
+  			var allPages = $('div[data-role="page"]');
+
+		    	for (var i = 1; i < allPages.length; i++) {
+  					allPages[i].innerHTML = theHeader + allPages[i].innerHTML;
+  				}
+		};
+
+$(document).ready(function() {
+
+  			$().headerOnAllPages();
+
+		});
+
 </script>
 
 <link href="css/style.css" rel="stylesheet">
@@ -32,9 +49,10 @@ $('.headerChild').load('header.html')
 </head>
 <body>
 
-<!-- <div id="header"></div> -->
-<div data-role="header" data-id="header" class="ui-header ui-bar-b" role="banner" id="headerMaster">
-	<div class="trow">
+
+  <header id="constantheader-wrapper">
+      <div data-role="header" data-id="theconstantheader" class="ui-header ui-bar-a" role="banner" data-position="fixed">
+           <div class="trow">
 		<div class="small-12 medium-12 large-12 small-centered columns">
 			<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-2 inline-list-custom">
 
@@ -58,8 +76,14 @@ $('.headerChild').load('header.html')
 			</ul>
 		</div>
 	</div>
+      </div>
+  </header>
 
-</div>
+<!-- <div id="header"></div> -->
+<!-- <div data-role="header" data-id="header" class="ui-header ui-bar-b" role="banner" id="headerMaster">
+	
+
+</div> -->
 
 <div class="row">
 	<div class="small-12 medium-12 large-12 small-centered columns">
