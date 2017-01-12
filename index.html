@@ -7,40 +7,22 @@
 <title>How to Design [almost] Anything</title>
 <meta name="description" content="Index Page">
 
+<script src="js/vendor/jquery.min.js"></script>
+<script> 
+	$(function(){
+	  $("#header").load("header.html"); 
+	  $("#footer").load("footer.html"); 
+	});
+</script>
 
 <link href="css/style.css" rel="stylesheet">
 <link href="css/font-awesome.min.css" rel="stylesheet">
-<!-- <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=###"> -->
 <script src="js/vendor/modernizr.js"></script>
 
 </head>
 <body>
 
-<div class="trow">
-	<div class="small-12 medium-12 large-12 small-centered columns">
-		<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-2 inline-list-custom">
-
-			<li>
-				<header>		
-					<h1><a href="index.html">How to Design <span style="color: #38BFC3">[almost]</span> Anything</a></h1>
-					<h2><a href="index.html">4.141/4.142 Wednesdays 2:00-5:00 Architecture Studios</a></h2>
-				</header>
-			</li>
-
-			<li>
-				<nav>
-					<ul class="inline-list-custom">
-						<li><a href="people.html">People</a></li>
-						<li><a href="tutorials.html">Tutorials</a></li>	
-						<li><a href="projects.html">Projects</a></li>	
-						<li><a href="about.html">About</a></li>	
-					</ul>
-				</nav>
-			</li>
-
-		</ul>
-	</div>
-</div>
+<div id="header"></div>
 
 <div class="row">
 	<div class="small-12 medium-12 large-12 small-centered columns">
@@ -201,7 +183,9 @@
 <gcse:search></gcse:search> -->
 </div>
 
-<div class="row">
+<div id="footer"></div>
+
+<!-- <div class="row">
 	<div class="small-12 medium-12 large-12 columns">
 		<footer>
 			<ul>
@@ -214,7 +198,7 @@
 			</div>
 		</footer>
 	</div>
-</div>
+</div> -->
 
 <script src="js/vendor/jquery.min.js"></script>
 <script src="js/foundation.min.js"></script>
