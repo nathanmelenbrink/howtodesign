@@ -16,7 +16,7 @@
 </script> -->
 
 <script> 
-$(document).delegate("#index", "pageinit", function () {
+$(document).delegate("#index", "pagebeforecreate", function () {
        $("#headerMaster").clone().appendTo(".headerChild");
 });
 </script>
