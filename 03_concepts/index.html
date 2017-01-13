@@ -6,7 +6,13 @@
 
 <title>How to Design [almost] Anything</title>
 <meta name="description" content="Index Page">
-
+<script src="../js/vendor/jquery.min.js"></script>
+<script> 
+	$(function(){
+	  $("#header").load("../header.html"); 
+	  $("#footer").load("../footer.html"); 
+	});
+</script>
 
 <link href="../css/style.css" rel="stylesheet">
 <link href="../css/font-awesome.min.css" rel="stylesheet">
@@ -15,31 +21,7 @@
 </head>
 <body>
 
-<div class="trow">
-	<div class="small-12 medium-12 large-12 small-centered columns">
-		<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-2 inline-list-custom">
-
-			<li>
-				<header>		
-					<h1><a href="../index.html">How to Design <span style="color: #38BFC3">[almost]</span> Anything</a></h1>
-					<h2><a href="../index.html">4.141/4.142 Wednesdays 2:00-5:00 Architecture Studios</a></h2>
-				</header>
-			</li>
-
-			<li>
-				<nav>
-					<ul class="inline-list-custom">
-						<li><a href="../people.html">People</a></li>
-						<li><a href="../tutorials.html">Tutorials</a></li>	
-						<li><a href="../projects.html">Projects</a></li>	
-						<li><a href="../prior.html">Prior Years</a></li>	
-					</ul>
-				</nav>
-			</li>
-
-		</ul>
-	</div>
-</div>
+<div id="header"></div>
 
 <!-- FIRST ROW -->
 <div class="row">
@@ -333,35 +315,7 @@
 </div>	<!-- END SECTION -->
 
 
-<div class="row">
-	<script>
-	  (function() {
-	    var cx = '007099622167081380328:lvpfpmey7pq';
-	    var gcse = document.createElement('script');
-	    gcse.type = 'text/javascript';
-	    gcse.async = true;
-	    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-	    var s = document.getElementsByTagName('script')[0];
-	    s.parentNode.insertBefore(gcse, s);
-	  })();
-	</script>
-<gcse:search></gcse:search>
-</div>
-
-<div class="row">
-	<div class="small-12 medium-12 large-12 columns">
-		<footer>
-			<ul>
-				<li>&copy; 2016 <a href="../index.html">How to Design [almost] Anything</a>. All rights reserved.</li>
-				<li><a href="http://howtodesign.mit.edu"> howtodesign.mit.edu </a></li>			
-			</ul>
-			<div class="social-icons">
-				<a href="http://www.twitter.com/" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
-				<a href="http://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
-			</div>
-		</footer>
-	</div>
-</div>
+<div id="footer"></div>
 
 <script src="../js/vendor/jquery.min.js"></script>
 <script src="../js/foundation.min.js"></script>
