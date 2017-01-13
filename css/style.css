@@ -786,10 +786,10 @@ Footer
 ==================================================================================================*/
 /* line 449, ../scss/_custom.scss */
 footer {
-  border-top: 1px /*solid #91b7c7*/;
-  margin-top: 3em;
-  padding-top: 4em;
-  padding-bottom: 5em;
+  border-top: 0px /*solid #91b7c7*/;
+  margin-top: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
 }
 
 /* line 456, ../scss/_custom.scss */
